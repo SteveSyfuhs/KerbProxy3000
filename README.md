@@ -9,7 +9,13 @@ https://github.com/justcoding121/Titanium-Web-Proxy/pull/448
 
 ## Running
 
-Build the thing and as a result you should have a console application and a settings file. This settings file contains details processing proxy requests. 
+Build the thing and as a result you should have a console application and a settings file. This file contains settings used by the proxy to process requests.
+
+You can just start the proxy. It doesn't have any command line arguments.
+
+To kill the proxy hit CTRL+C.
+
+## Settings
 
 *ListenPort*: The port the proxy listens on. Defaults to 8000. Keep it above 1000 if you don't want to run as an administrator.
 

@@ -1,0 +1,10 @@
+{
+  "CertificateAuthority": "KerbProxy3000 CA",
+  "ListenPort": 8000,
+  "AuthenticationSchemes": [ "Negotiate", "Kerberos", "NTLM" ],
+  "SetSystemProxy": false,
+  "Authentication": {
+    "NtlmKey": "P@ssw0rd!",
+    "IncludeMetadataHeaders": true
+  }
+}

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Kerberos.NET" Version="2.2.512.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Titanium.Web.Proxy">
+      <HintPath>..\..\..\web-proxy\Titanium.Web.Proxy\bin\Debug\netstandard2.0\Titanium.Web.Proxy.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -15,6 +15,8 @@ You can just start the proxy. It doesn't have any command line arguments.
 
 To kill the proxy hit CTRL+C.
 
+Note that NTLM currently just prompts for a token. The proxy will treat any presented NTLM ticket as valid. This is intentional for now. Eventually it'll be dealt with. Kerberos will be authenticated correctly, but it requires a little setup on the AD side of things. You will need to create a service account with SPN for the proxy, and set it's password in the settings file.
+
 ## Settings
 
 *ListenPort*: The port the proxy listens on. Defaults to 8000. Keep it above 1000 if you don't want to run as an administrator.
@@ -24,5 +26,3 @@ To kill the proxy hit CTRL+C.
 *AuthenticationSchemes*: This is the list of supported schemes that the proxy will respond to the caller with. 
 
 "Authentication": This contains settings for use by proxy to decode real tickets. The proxy will attempt to include authenticated details in the response headers if it succeeds.
-
-Note that NTLM currently just prompts for a token. The proxy will treat any presented NTLM ticket as valid. This is intentional for now. Eventually it'll be dealt with.
